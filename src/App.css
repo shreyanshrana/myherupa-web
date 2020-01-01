@@ -1,0 +1,634 @@
+/*Grid System with Media Query*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+.col {
+  float: left; }
+
+@media screen and (max-width: 1200px) {
+  .col-md-12 {
+    width: 100%; }
+  .col-md-11 {
+    width: 91.662%; }
+  .col-md-10 {
+    width: 83.332%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-8 {
+    width: 66.662%; }
+  .col-md-7 {
+    width: 58.331%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-5 {
+    width: 41.662%; }
+  .col-md-4 {
+    width: 33.332%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-2 {
+    width: 16.662%; }
+  .col-md-1 {
+    width: 8.332%; } }
+
+@media screen and (max-width: 900px) {
+  .col-sm-12 {
+    width: 100%; }
+  .col-sm-11 {
+    width: 91.662%; }
+  .col-sm-10 {
+    width: 83.332%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-8 {
+    width: 66.662%; }
+  .col-sm-7 {
+    width: 58.331%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-5 {
+    width: 41.662%; }
+  .col-sm-4 {
+    width: 33.332%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-2 {
+    width: 16.662%; }
+  .col-sm-1 {
+    width: 8.332%; } }
+
+@media screen and (max-width: 600px) {
+  .col-xs-12 {
+    width: 100%; }
+  .col-xs-11 {
+    width: 91.662%; }
+  .col-xs-10 {
+    width: 83.332%; }
+  .col-xs-9 {
+    width: 75%; }
+  .col-xs-8 {
+    width: 66.662%; }
+  .col-xs-7 {
+    width: 58.331%; }
+  .col-xs-6 {
+    width: 50%; }
+  .col-xs-5 {
+    width: 41.662%; }
+  .col-xs-4 {
+    width: 33.332%; }
+  .col-xs-3 {
+    width: 25%; }
+  .col-xs-2 {
+    width: 16.662%; }
+  .col-xs-1 {
+    width: 8.332%; } }
+
+@media screen and (min-width: 1200px) {
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-11 {
+    width: 91.662%; }
+  .col-lg-10 {
+    width: 83.332%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-8 {
+    width: 66.662%; }
+  .col-lg-7 {
+    width: 58.331%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-5 {
+    width: 41.662%; }
+  .col-lg-4 {
+    width: 33.332%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-2 {
+    width: 16.662%; }
+  .col-lg-1 {
+    width: 8.332%; } }
+
+* {
+  font-family: "Raleway", sans-serif; }
+
+body {
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum"; }
+
+@media screen and (min-width: 0px) {
+  .display1 {
+    font-size: 2.4rem; } }
+
+@media screen and (min-width: 200px) {
+  .display1 {
+    font-size: 3.2rem; } }
+
+@media screen and (min-width: 350px) {
+  .display1 {
+    font-size: 7.2rem; } }
+
+@media screen and (min-width: 600px) {
+  .display1 {
+    font-size: 7.2rem; } }
+
+@media screen and (min-width: 720px) {
+  .display1 {
+    font-size: 8rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display1 {
+    font-size: 10.4rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display1 {
+    font-size: 12rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display1 {
+    font-size: 14.4rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display1 {
+    font-size: 16.8rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display1 {
+    font-size: 20rem; } }
+
+@media screen and (min-width: 0px) {
+  .display2 {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 200px) {
+  .display2 {
+    font-size: 2.66667rem; } }
+
+@media screen and (min-width: 350px) {
+  .display2 {
+    font-size: 6rem; } }
+
+@media screen and (min-width: 600px) {
+  .display2 {
+    font-size: 6rem; } }
+
+@media screen and (min-width: 720px) {
+  .display2 {
+    font-size: 6.66667rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display2 {
+    font-size: 8.66667rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display2 {
+    font-size: 10rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display2 {
+    font-size: 12rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display2 {
+    font-size: 14rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display2 {
+    font-size: 16.66667rem; } }
+
+@media screen and (min-width: 0px) {
+  .display3 {
+    font-size: 1.6rem; } }
+
+@media screen and (min-width: 200px) {
+  .display3 {
+    font-size: 2.13333rem; } }
+
+@media screen and (min-width: 350px) {
+  .display3 {
+    font-size: 4.8rem; } }
+
+@media screen and (min-width: 600px) {
+  .display3 {
+    font-size: 4.8rem; } }
+
+@media screen and (min-width: 720px) {
+  .display3 {
+    font-size: 5.33333rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display3 {
+    font-size: 6.93333rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display3 {
+    font-size: 8rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display3 {
+    font-size: 9.6rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display3 {
+    font-size: 11.2rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display3 {
+    font-size: 13.33333rem; } }
+
+@media screen and (min-width: 0px) {
+  .display4 {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 200px) {
+  .display4 {
+    font-size: 1.6rem; } }
+
+@media screen and (min-width: 350px) {
+  .display4 {
+    font-size: 3.6rem; } }
+
+@media screen and (min-width: 600px) {
+  .display4 {
+    font-size: 3.6rem; } }
+
+@media screen and (min-width: 720px) {
+  .display4 {
+    font-size: 4rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display4 {
+    font-size: 5.2rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display4 {
+    font-size: 6rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display4 {
+    font-size: 7.2rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display4 {
+    font-size: 8.4rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display4 {
+    font-size: 10rem; } }
+
+@media screen and (min-width: 0px) {
+  .display5 {
+    font-size: 0.8rem; } }
+
+@media screen and (min-width: 200px) {
+  .display5 {
+    font-size: 1.06667rem; } }
+
+@media screen and (min-width: 350px) {
+  .display5 {
+    font-size: 2.4rem; } }
+
+@media screen and (min-width: 600px) {
+  .display5 {
+    font-size: 2.4rem; } }
+
+@media screen and (min-width: 720px) {
+  .display5 {
+    font-size: 2.66667rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display5 {
+    font-size: 3.46667rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display5 {
+    font-size: 4rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display5 {
+    font-size: 4.8rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display5 {
+    font-size: 5.6rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display5 {
+    font-size: 6.66667rem; } }
+
+@media screen and (min-width: 0px) {
+  .display6 {
+    font-size: 0.6rem; } }
+
+@media screen and (min-width: 200px) {
+  .display6 {
+    font-size: 0.8rem; } }
+
+@media screen and (min-width: 350px) {
+  .display6 {
+    font-size: 1.8rem; } }
+
+@media screen and (min-width: 600px) {
+  .display6 {
+    font-size: 1.8rem; } }
+
+@media screen and (min-width: 720px) {
+  .display6 {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display6 {
+    font-size: 2.6rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display6 {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display6 {
+    font-size: 3.6rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display6 {
+    font-size: 4.2rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display6 {
+    font-size: 5rem; } }
+
+@media screen and (min-width: 0px) {
+  .display7 {
+    font-size: 0.4rem; } }
+
+@media screen and (min-width: 200px) {
+  .display7 {
+    font-size: 0.53333rem; } }
+
+@media screen and (min-width: 350px) {
+  .display7 {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 600px) {
+  .display7 {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 720px) {
+  .display7 {
+    font-size: 1.33333rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display7 {
+    font-size: 1.73333rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display7 {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display7 {
+    font-size: 2.4rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display7 {
+    font-size: 2.8rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display7 {
+    font-size: 3.33333rem; } }
+
+@media screen and (min-width: 0px) {
+  .display8 {
+    font-size: 0.3rem; } }
+
+@media screen and (min-width: 200px) {
+  .display8 {
+    font-size: 0.4rem; } }
+
+@media screen and (min-width: 350px) {
+  .display8 {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 600px) {
+  .display8 {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 720px) {
+  .display8 {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display8 {
+    font-size: 1.3rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display8 {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display8 {
+    font-size: 1.8rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display8 {
+    font-size: 2.1rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display8 {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 0px) {
+  .display9 {
+    font-size: 0.25rem; } }
+
+@media screen and (min-width: 200px) {
+  .display9 {
+    font-size: 0.33333rem; } }
+
+@media screen and (min-width: 350px) {
+  .display9 {
+    font-size: 0.75rem; } }
+
+@media screen and (min-width: 600px) {
+  .display9 {
+    font-size: 0.75rem; } }
+
+@media screen and (min-width: 720px) {
+  .display9 {
+    font-size: 0.83333rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display9 {
+    font-size: 1.08333rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display9 {
+    font-size: 1.25rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display9 {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display9 {
+    font-size: 1.75rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display9 {
+    font-size: 2.08333rem; } }
+
+@media screen and (min-width: 0px) {
+  .display10 {
+    font-size: 0.2rem; } }
+
+@media screen and (min-width: 200px) {
+  .display10 {
+    font-size: 0.26667rem; } }
+
+@media screen and (min-width: 350px) {
+  .display10 {
+    font-size: 0.6rem; } }
+
+@media screen and (min-width: 600px) {
+  .display10 {
+    font-size: 0.6rem; } }
+
+@media screen and (min-width: 720px) {
+  .display10 {
+    font-size: 0.66667rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display10 {
+    font-size: 0.86667rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display10 {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display10 {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display10 {
+    font-size: 1.4rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display10 {
+    font-size: 1.66667rem; } }
+
+@media screen and (min-width: 0px) {
+  .display11 {
+    font-size: 0.15rem; } }
+
+@media screen and (min-width: 200px) {
+  .display11 {
+    font-size: 0.2rem; } }
+
+@media screen and (min-width: 350px) {
+  .display11 {
+    font-size: 0.45rem; } }
+
+@media screen and (min-width: 600px) {
+  .display11 {
+    font-size: 0.45rem; } }
+
+@media screen and (min-width: 720px) {
+  .display11 {
+    font-size: 0.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display11 {
+    font-size: 0.65rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display11 {
+    font-size: 0.75rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display11 {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display11 {
+    font-size: 1.05rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display11 {
+    font-size: 1.25rem; } }
+
+@media screen and (min-width: 0px) {
+  .display12 {
+    font-size: 0.1rem; } }
+
+@media screen and (min-width: 200px) {
+  .display12 {
+    font-size: 0.13333rem; } }
+
+@media screen and (min-width: 350px) {
+  .display12 {
+    font-size: 0.3rem; } }
+
+@media screen and (min-width: 600px) {
+  .display12 {
+    font-size: 0.3rem; } }
+
+@media screen and (min-width: 720px) {
+  .display12 {
+    font-size: 0.33333rem; } }
+
+@media screen and (min-width: 1024px) {
+  .display12 {
+    font-size: 0.43333rem; } }
+
+@media screen and (min-width: 1280px) {
+  .display12 {
+    font-size: 0.5rem; } }
+
+@media screen and (min-width: 1920px) {
+  .display12 {
+    font-size: 0.6rem; } }
+
+@media screen and (min-width: 2560px) {
+  .display12 {
+    font-size: 0.7rem; } }
+
+@media screen and (min-width: 3840px) {
+  .display12 {
+    font-size: 0.83333rem; } }
+
+@media screen and (max-width: 900px) {
+  .hide-from-phone {
+    display: none !important; } }
+
+@media screen and (min-width: 600px) {
+  .hide-from-desktop {
+    display: none !important; } }
+
+.hide-from-small-desktop {
+  display: none !important; }
+  @media screen and (min-width: 1400px) {
+    .hide-from-small-desktop {
+      display: block !important; } }
+
+.bold {
+  font-weight: 900;
+  font-size: inherit;
+  color: inherit; }
+
+.thin {
+  font-weight: 100;
+  font-size: inherit;
+  color: inherit; }
+
+.break-mobile {
+  display: none; }
+  @media screen and (max-width: 900px) {
+    .break-mobile {
+      display: inline; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 62.5%; }

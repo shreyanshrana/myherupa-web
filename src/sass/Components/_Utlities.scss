@@ -1,0 +1,36 @@
+.hide-from-phone {
+  @media screen and (max-width: 900px) {
+    display: none !important;
+  }
+}
+
+.hide-from-desktop {
+  @media screen and (min-width: 600px) {
+    display: none !important;
+  }
+}
+.hide-from-small-desktop {
+  display: none !important;
+  @media screen and (min-width: 1400px) {
+    display: block !important;
+  }
+}
+.bold {
+  font-weight: 900;
+  font-size: inherit;
+  color: inherit;
+}
+
+.thin {
+  font-weight: 100;
+  font-size: inherit;
+  color: inherit;
+}
+
+.break-mobile {
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: inline;
+  }
+}
