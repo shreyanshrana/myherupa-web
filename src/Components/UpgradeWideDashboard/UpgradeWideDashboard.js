@@ -1,3 +1,5 @@
+//Provide top and left position
+//eg. <UpgradeWideDashboard left="50%" top = "50%"/>
 import React from "react";
 import "./UpgradeWideDashboard.css";
 

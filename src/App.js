@@ -1,11 +1,11 @@
 import React from "react";
-import UpgradeWideDashboard from "./Components/UpgradeWideDashboard/UpgradeWideDashboard";
+import CalendarSubjectButton from "./Components/CalendarSubjectButton/CalendarSubjectButton";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <UpgradeWideDashboard left="50%" top="50%" />
+      <CalendarSubjectButton width="300px" />
     </div>
   );
 }
