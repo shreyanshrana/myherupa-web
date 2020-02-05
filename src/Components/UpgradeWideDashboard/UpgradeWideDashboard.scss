@@ -1,0 +1,84 @@
+$width: 866px;
+$height: $width * (190/866);
+.UpgradeWideDashboard {
+  position: absolute;
+  height: $height;
+  width: $width;
+  /* left: 50%; */
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
+  &__Img {
+    overflow: visible;
+    background: url("img/unlock.svg");
+    background-size: cover;
+    background-position: center;
+    width: 140px;
+    height: 170px;
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  &__Bg {
+    position: absolute;
+    width: 828px;
+    height: 140px;
+    background: rgba(96, 196, 237, 0.4);
+    border-radius: 20px;
+  }
+  &__Text {
+    width: 316px;
+    height: 114px;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    font-size: 28px;
+    font-family: "Open Sans", sans-serif;
+    transform: translate(-50%, -50%);
+  }
+  &__Btn {
+    position: absolute;
+    width: 330px;
+    height: 64px;
+    left: 85%;
+    color: white;
+    font-weight: 900;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    cursor: pointer;
+
+    box-shadow: 5px 0px 10px rgba(96, 196, 237, 0.5);
+    transition: ease 0.5s;
+
+    /* Primary Gradient */
+
+    background: linear-gradient(
+      180deg,
+      rgba(96, 196, 237, 0.75) 0%,
+      rgba(51, 140, 194, 0.75) 100%
+    );
+    border-radius: 20px;
+
+    &:hover {
+      box-shadow: 0 0px 6px rgba(96, 196, 237, 1);
+    }
+
+    &--Text {
+      font-size: 24px;
+      font-family: "Open Sans", sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 64px;
+    }
+
+    &--Arrow {
+      line-height: 64px;
+      font-size: 20px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+  }
+}

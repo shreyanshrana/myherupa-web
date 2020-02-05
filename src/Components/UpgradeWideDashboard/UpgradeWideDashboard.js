@@ -1,7 +1,7 @@
 //Provide top and left position
 //eg. <UpgradeWideDashboard left="50%" top = "50%"/>
 import React from "react";
-import "./UpgradeWideDashboard.css";
+import "./UpgradeWideDashboard.scss";
 
 let UpgradeWideDashboard = props => {
   let position_of_promo = {
@@ -9,7 +9,7 @@ let UpgradeWideDashboard = props => {
     top: props.top
   };
   return (
-    <div className="UpgradeWideDashboard" style={position_of_promo}>
+    <div className="UpgradeWideDashboard test" style={position_of_promo}>
       <div className="UpgradeWideDashboard__Img"></div>
       <div className="UpgradeWideDashboard__Bg">
         <p className="UpgradeWideDashboard__Text">

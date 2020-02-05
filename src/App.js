@@ -1,13 +1,14 @@
-import React from "react";
-import CalendarSubjectButton from "./Components/CalendarSubjectButton/CalendarSubjectButton";
+import React, { Component } from "react";
+
+import UpgradeWideDashboard from "./Components/UpgradeWideDashboard/UpgradeWideDashboard";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <CalendarSubjectButton width="300px" />
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <UpgradeWideDashboard />
+      </div>
+    );
+  }
 }
-
-export default App;
