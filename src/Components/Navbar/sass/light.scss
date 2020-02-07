@@ -1,0 +1,22 @@
+@import "../../../sass/Components/Variables";
+
+.Navbar {
+    background-color: $primary-color-light;
+
+    & img {
+        border: 2.5px solid $primary-color-dark;
+    }
+
+    &__Btn {
+        &-Selected {
+            color: $primary-color-dark !important;
+            &-Indicator {
+                background-color: $primary-color-dark;
+            }
+        }
+
+        &-Settings {
+            color: $primary-color-dark !important;
+        }
+    }
+}
