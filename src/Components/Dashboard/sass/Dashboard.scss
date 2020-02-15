@@ -1,0 +1,15 @@
+.Dashboard {
+    float: left;
+    width: 97rem;
+    &__Title {
+        font-size: 24px;
+        position: relative;
+        left: 7.5%;
+        top: 50px;
+    }
+    &__SubjectWidget--Container {
+        position: relative;
+        left: 7.5%;
+        top: 100px;
+    }
+}

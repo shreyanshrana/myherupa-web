@@ -1,0 +1,52 @@
+@import "../../../sass/Components/Variables";
+
+.SubjectWidget {
+    width: 240px;
+    height: 90px;
+    // border: 0.5px solid red;
+    border-radius: 10px;
+    float: left;
+    margin: 20px 15px;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+    box-shadow: 0px 6px 25px rgba($primary-color-dark, 0.13);
+    &:hover {
+        box-shadow: 0px 3px 15px rgba($primary-color-dark, 0.33);
+    }
+    &__Abbr {
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 28px;
+        padding: 10px 0;
+        font-weight: 100;
+        text-align: center;
+        border-radius: 50%;
+        float: left;
+    }
+    &__Info {
+        width: 160px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        float: left;
+        &--Course {
+            &-Name {
+                font-size: 16px;
+            }
+            &-Code {
+                font-size: 10px;
+            }
+        }
+    }
+    &__Bar {
+        width: 7px;
+        border-radius: 0 4px 4px 0px;
+        height: 90px;
+        float: right;
+    }
+}

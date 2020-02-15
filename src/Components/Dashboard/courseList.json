@@ -1,0 +1,56 @@
+[
+    {
+        "courseName": "Microprocessors",
+        "courseCode": "UCS111",
+        "courseAbbr": "MP",
+        "color": "#845EC2"
+    },
+    {
+        "courseName": "Image Processing",
+        "courseCode": "UCS112",
+        "courseAbbr": "IP",
+        "color": "#ff9671"
+    },
+    {
+        "courseName": "Financial Mathematics",
+        "courseCode": "UCS113",
+        "courseAbbr": "FM",
+        "color": "#d65db1"
+    },
+    {
+        "courseName": "Matrix Computation",
+        "courseCode": "UCS114",
+        "courseAbbr": "MC",
+        "color": "#ff6f91"
+    },
+    {
+        "courseName": "Embedded Systems",
+        "courseCode": "UCS115",
+        "courseAbbr": "ES",
+        "color": "#0081cf"
+    },
+    {
+        "courseName": "Innovation & Entrepreneurship",
+        "courseCode": "UCS116",
+        "courseAbbr": "IE",
+        "color": "#008f7a"
+    },
+    {
+        "courseName": "Matrix Computation",
+        "courseCode": "UCS114",
+        "courseAbbr": "MC",
+        "color": "#ff6f91"
+    },
+    {
+        "courseName": "Embedded Systems",
+        "courseCode": "UCS115",
+        "courseAbbr": "ES",
+        "color": "#0081cf"
+    },
+    {
+        "courseName": "Innovation & Entrepreneurship",
+        "courseCode": "UCS116",
+        "courseAbbr": "IE",
+        "color": "#008f7a"
+    }
+]

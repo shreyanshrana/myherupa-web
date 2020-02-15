@@ -1,49 +1,49 @@
 .hide-from-phone {
-  @media screen and (max-width: 900px) {
-    display: none !important;
-  }
+    @media screen and (max-width: 900px) {
+        display: none !important;
+    }
 }
 
 .hide-from-desktop {
-  @media screen and (min-width: 600px) {
-    display: none !important;
-  }
+    @media screen and (min-width: 600px) {
+        display: none !important;
+    }
 }
 .hide-from-small-desktop {
-  display: none !important;
-  @media screen and (min-width: 1400px) {
-    display: block !important;
-  }
+    display: none !important;
+    @media screen and (min-width: 1400px) {
+        display: block !important;
+    }
 }
 .bold {
-  font-weight: 900;
-  font-size: inherit;
-  color: inherit;
+    font-weight: 700;
+    font-size: inherit;
+    color: inherit;
 }
 
 .thin {
-  font-weight: 100;
-  font-size: inherit;
-  color: inherit;
+    font-weight: 100;
+    font-size: inherit;
+    color: inherit;
 }
 
 .break-mobile {
-  display: none;
+    display: none;
 
-  @media screen and (max-width: 900px) {
-    display: inline;
-  }
+    @media screen and (max-width: 900px) {
+        display: inline;
+    }
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .test {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

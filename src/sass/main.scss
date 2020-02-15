@@ -1,6 +1,7 @@
 @import "Components/Layout";
 @import "Components/Typography";
 @import "Components/Utlities";
+@import "Components/Variables";
 
 * {
     box-sizing: border-box;
@@ -12,4 +13,27 @@
 
 a {
     text-decoration: none;
+    &:link {
+        color: $primary-color-light;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: $primary-color-light;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:active {
+        background-color: transparent;
+    }
+}
+.App {
+    height: 100vh;
+    width: 100vw;
 }

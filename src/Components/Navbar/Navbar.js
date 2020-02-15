@@ -8,21 +8,16 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lightTheme: true,
             study: true,
             calendar: false
         };
     }
     componentDidMount() {
-        if (this.state.lightTheme === true) require("./sass/light.scss");
-        if (this.state.lightTheme === false) require("./sass/dark.scss");
+        if (this.props.lightTheme === true) require("./sass/light.scss");
+        if (this.props.lightTheme === false) require("./sass/dark.scss");
     }
 
-    //works only 2 timw, temperory
-    componentDidUpdate() {
-        if (this.state.lightTheme === true) require("./sass/light.scss");
-        if (this.state.lightTheme === false) require("./sass/dark.scss");
-    }
+    
     render() {
         let toggleStudy = () => {
             this.setState({
@@ -38,14 +33,7 @@ class Navbar extends Component {
             });
         };
 
-        //works only 2 timw, temperory
-        let toggleTheme = () => {
-            this.setState({
-                lightTheme: !this.state.lightTheme
-            });
-
-            console.log(this.state.lightTheme);
-        };
+        
         let studyButtonClass = {
             container: "Navbar__Btn-Holder clearfix",
             indicator: "col col-lg-1"
@@ -94,7 +82,7 @@ class Navbar extends Component {
         }
         return (
             <div className="Navbar">
-                <img src={logo} alt="myHerupa" onClick={toggleTheme} />
+                <img src={logo} alt="myHerupa" />
                 <div className="Navbar__Btn-Container">
                     <Router>
                         <Link to="/" onClick={toggleStudy}>

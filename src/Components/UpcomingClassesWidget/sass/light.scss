@@ -1,0 +1,10 @@
+@import "../../../sass/Components/Variables";
+
+.UpcomingClassesWidget {
+    padding: 1rem 0;
+    color:$primary-color-dark;
+    &__Abbr {
+        background-color: $primary-color-dark;
+        color:$primary-color-light;
+    }
+}

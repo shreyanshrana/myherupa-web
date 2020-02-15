@@ -1,0 +1,12 @@
+@import "../../../sass/Components/Variables";
+
+.Sidebar {
+    background-color: $primary-color-light;
+
+    color:$primary-color-dark;
+    &__Date,
+    &__Day {
+        text-align: right;
+        color: $primary-color-dark;
+    }
+}

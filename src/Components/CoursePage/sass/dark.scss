@@ -1,0 +1,15 @@
+@import "../../../sass/Components/Variables";
+
+.CoursePage {
+    &__Menu {
+        &-Btn {
+            color: $secondary-color-light;
+            &:hover {
+                color: $primary-color-light;
+            }
+        }
+        &-Active {
+            color: $primary-color-light;
+        }
+    }
+}
