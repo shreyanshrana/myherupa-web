@@ -1,0 +1,10 @@
+@import "../../../sass/Components/Variables";
+
+.DocumentWidget {
+    &__Info {
+        height: 40%;
+        width: 100%;
+        background-color: $primary-color-dark;
+        color: $primary-color-light;
+    }
+}

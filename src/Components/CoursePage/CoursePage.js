@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import "./sass/CoursePage.scss";
+import documentList from "./documentList.json";
+import DocumentWidget from "../DocumentWidget/DocumentWidget";
 
 class CoursePage extends Component {
     constructor(props) {
@@ -12,7 +14,8 @@ class CoursePage extends Component {
                 tutorials: false,
                 tutorial_solutions: false,
                 previous_year_paper: false
-            }
+            },
+            documentList: documentList
         };
     }
     componentDidMount() {
@@ -143,6 +146,13 @@ class CoursePage extends Component {
         return (
             <div className="CoursePage">
                 <h1 className="CoursePage__Title">
+                    <Router>
+                        <Link to="/">
+                            <button className="CoursePage__Back">
+                                <ion-icon name="arrow-back-circle"></ion-icon>
+                            </button>
+                        </Link>
+                    </Router>
                     Your Courses > {this.props.courseName}
                 </h1>
                 <div className="CoursePage__Container">
@@ -174,6 +184,18 @@ class CoursePage extends Component {
                         >
                             Previous Year Paper
                         </button>
+                    </div>
+                    <div className="CoursePage__Document-Container clearfix">
+                        {this.state.documentList.map(elem => {
+                            return (
+                                <DocumentWidget
+                                    lightTheme={this.props.lightTheme}
+                                    documentName={elem.documentName}
+                                    documentViews={elem.documentViews}
+                                    documentDate={elem.documentDate}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
             </div>

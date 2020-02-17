@@ -12,4 +12,13 @@
             color: $primary-color-light;
         }
     }
+    &__Back {
+        // stroke: $primary-color-light !important;
+        color: $primary-color-light;
+        background-color: transparent;
+        font-size: 36px;
+        margin: 0px 10px;
+        border: 0;
+        cursor: pointer;
+    }
 }
