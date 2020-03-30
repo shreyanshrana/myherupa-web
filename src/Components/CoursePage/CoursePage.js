@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 import "./sass/CoursePage.scss";
-import documentList from "./documentList.json";
+import notesList from "./notesList.json";
+import labList from "./labList.json";
 import DocumentWidget from "../DocumentWidget/DocumentWidget";
 
 class CoursePage extends Component {
@@ -15,7 +16,7 @@ class CoursePage extends Component {
                 tutorial_solutions: false,
                 previous_year_paper: false
             },
-            documentList: documentList
+            documentList: notesList
         };
     }
     componentDidMount() {
@@ -32,7 +33,8 @@ class CoursePage extends Component {
                     tutorials: false,
                     tutorial_solutions: false,
                     previous_year_paper: false
-                }
+                },
+                documentList: notesList
             });
         };
 
@@ -44,7 +46,8 @@ class CoursePage extends Component {
                     tutorials: false,
                     tutorial_solutions: false,
                     previous_year_paper: false
-                }
+                },
+                documentList: labList
             });
         };
 
@@ -142,7 +145,28 @@ class CoursePage extends Component {
                 20
             );
         }
-        console.log(this.props);
+
+        // const fuse = new Fuse(this.state.documentList, options);
+
+        let search = event => {
+            let searchText = event.target.value;
+            let copy_of_documentList = this.state.documentList;
+            for (let i = 0; i < copy_of_documentList.length; i++) {
+                if (
+                    copy_of_documentList[i].documentName
+                        .toUpperCase()
+                        .includes(searchText.toUpperCase())
+                ) {
+                    copy_of_documentList[i].show = true;
+                } else {
+                    copy_of_documentList[i].show = false;
+                }
+            }
+            this.setState({
+                documentList: copy_of_documentList
+            });
+        };
+        // console.log(this.props);
         return (
             <div className="CoursePage">
                 <h1 className="CoursePage__Title">
@@ -156,7 +180,7 @@ class CoursePage extends Component {
                     Your Courses > {this.props.courseName}
                 </h1>
                 <div className="CoursePage__Container">
-                    <div className="CoursePage__Menu">
+                    <div className="CoursePage__Menu clearfix">
                         <button
                             className={buttonClass.notes}
                             onClick={toggleNotes}
@@ -184,17 +208,27 @@ class CoursePage extends Component {
                         >
                             Previous Year Paper
                         </button>
+                        <ion-icon
+                            name="search"
+                            class="CoursePage__Search-Icon"
+                        ></ion-icon>
+                        <input
+                            className="CoursePage__Search"
+                            placeholder="Search here.."
+                            onChange={search}
+                        ></input>
                     </div>
                     <div className="CoursePage__Document-Container clearfix">
                         {this.state.documentList.map(elem => {
-                            return (
-                                <DocumentWidget
-                                    lightTheme={this.props.lightTheme}
-                                    documentName={elem.documentName}
-                                    documentViews={elem.documentViews}
-                                    documentDate={elem.documentDate}
-                                />
-                            );
+                            if (elem.show === true)
+                                return (
+                                    <DocumentWidget
+                                        lightTheme={this.props.lightTheme}
+                                        documentName={elem.documentName}
+                                        documentViews={elem.documentViews}
+                                        documentDate={elem.documentDate}
+                                    />
+                                );
                         })}
                     </div>
                 </div>

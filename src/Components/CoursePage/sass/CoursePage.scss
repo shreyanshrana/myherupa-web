@@ -2,7 +2,7 @@
 
 .CoursePage {
     float: left;
-    width: 97rem;
+    width: 800;
     &__Title {
         font-size: 24px;
         position: relative;
@@ -34,6 +34,22 @@
             color: $primary-color-light;
             font-weight: 700;
             border-bottom: 3px solid yellow;
+        }
+    }
+    &__Search {
+        width: 200px;
+        float: right;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid yellow;
+        text-align: right;
+        font-size: 16px;
+        padding-right: 4px;
+        &-Icon {
+            float: right;
+            // border-bottom: 1px solid yellow;
+            // border-right: 1px solid yellow;
+            font-size: 21px;
         }
     }
     &__Document-Container {

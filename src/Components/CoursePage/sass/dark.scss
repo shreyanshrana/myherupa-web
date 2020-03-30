@@ -21,4 +21,10 @@
         border: 0;
         cursor: pointer;
     }
+    &__Search {
+        color: $primary-color-light;
+        &-Icon {
+            color: $primary-color-light;
+        }
+    }
 }
